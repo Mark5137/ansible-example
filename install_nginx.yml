@@ -1,0 +1,7 @@
+---
+- name: Install NGINX
+  hosts: all
+
+  tasks:
+    - name: apt install nginx
+      raw: sudo apt install nginx -y

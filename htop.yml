@@ -1,0 +1,10 @@
+---
+- name: Install HTOP
+  hosts: all
+
+  tasks:
+    - name: apt update
+      raw: sudo apt update
+
+    - name: apt install htop
+      raw: sudo apt install htop
